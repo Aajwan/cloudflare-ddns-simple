@@ -47,6 +47,8 @@ A feature-rich and robust Cloudflare DDNS updater with a small Docker image. It 
     --certificate-oidc-issuer https://token.actions.githubusercontent.com
   ```
 
+  The GHCR mirror (unreleased) can be verified with the same command by replacing the image reference `favonia/cloudflare-ddns:1` with `ghcr.io/favonia/cloudflare-ddns:1`.
+
   This only proves that the Docker image is from this repository, assuming that no one hacks into GitHub or the repository. It does not prove that the code itself is secure.
 
   </details>
@@ -91,6 +93,8 @@ docker run \
   -e PROXIED=true \
   favonia/cloudflare-ddns:1
 ```
+
+The GHCR mirror at `ghcr.io/favonia/cloudflare-ddns` (unreleased) uses the same image tags as `favonia/cloudflare-ddns`.
 
 ⚠️ `PROXIED=true` does not change the proxy statuses of existing records. See [DNS and WAF Fallback Values](#dns-and-waf-fallback-values).
 
